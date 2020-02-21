@@ -36,8 +36,9 @@ div .logo {
 
 li {
     display: inline-block;
+    list-style: circle;
     margin-top: 20px;
-    padding: 10px;
+    padding: 10.2px 13px;
 }
 
 span {
@@ -50,7 +51,7 @@ a {
 }
 
 li:last-child {
-    margin-right: 30px;
+    margin-right: 28px;
 }
 
 .container {
@@ -81,39 +82,79 @@ main .container {
 }
 
 .iphone1 {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 54px;
-    left: 62px;
-    transform: translate(10px, -2px);
+    bottom: 37.5%;
+    left: 27%;
 }
 
 .iphone2 {
     /* margin-left: 150px; */
     /* padding: 20px; */
-    position: relative;
-    top: -70px;
-    left: 150px;
+    position: absolute;
+    z-index: 10;
+    top: 145px;
+    left: 948px;
     transform: rotate(90deg);
 }
 
-.shadow {
-    position: relative;
-    left: 65px;
-    top: -850px;
-    transform: translate(7px, -14px);
+.shadow1 {
+    position: absolute;
+    bottom: 340px;
+    left: 515px;
 }
 
-.arrowleft {
-    margin: 0;
+.shadow2 {
+    position: absolute;
+    bottom: 462px;
+    left: 828px;
+}
+
+.wallpaperhorizon {
+    position: absolute;
+    left: 514px;
+    top: 77px;
+    z-index: 9999999;
+}
+
+.wallpapervertical {
+    position: absolute;
+    left: 762px;
+    top: 162px;
+    z-index: 9999999;
 }
 
 .btn_left {
+    position: absolute;
+    top: 375px;
+    left: 485px;
     margin: 0;
     width: 16px;
     height: 27px;
     border: none;
+    cursor: pointer;
     background: url('assets/chev.png') no-repeat;
+}
+
+.btn_right {
+    position: absolute;
+    top: 375px;
+    right: 480px;
+    margin: 0;
+    width: 16px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+    transform: rotate(180deg);
+    background: url('assets/chev.png') no-repeat;
+}
+
+.btn_right:hover {
+    background-size: 1.2em 90%;
+}
+
+.btn_left:hover {
+    background-size: 1.225em 90%;
 }
 
 footer .container {
@@ -139,18 +180,29 @@ footer .container {
 }
 
 .colums {
+    overflow-wrap: normal;
+    word-wrap: normal;
+    word-break: break-all;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
+    text-align: justify;
     padding-top: 20px;
+    line-height: 22px;
+}
+
+h2 {
+    margin: 0;
+    font-style: bold;
+    font-size: 18px;
 }
 
 div.colums.item1 {
     position: relative;
     left: -28px;
     top: 12px;
-    width: 16%;
+    width: 220px;
     height: 100px;
     font-size: 12px;
 }
@@ -159,10 +211,16 @@ div.colums.item1 {
     margin: 0;
     padding: 0;
     line-height: 22px;
+    position: relative;
+    left: 2px;
+    top: -5px;
 }
 
 .colums.item1 h2 {
     margin: 0;
+    position: relative;
+    left: -48px;
+    top: -5px;
 }
 
 figure.pen {
@@ -174,78 +232,136 @@ figure.bulb {
     margin: 0;
     position: relative;
     top: 30px;
-    left: 42px;
+    left: -12px;
 }
 
 div.colums.item2 {
     position: relative;
-    left: 55px;
-    top: -10px;
-    width: 16%;
+    top: 5px;
+    left: -50px;
+    width: 220px;
     height: 100px;
     font-size: 12px;
+}
+
+.colums.item2 p {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: 50px;
 }
 
 figure.heart {
     margin: 0;
     position: relative;
     top: 30px;
-    right: 25px;
+    right: -15px;
 }
 
 div.colums.item3 {
     position: relative;
-    left: -45px;
+    left: -25px;
     top: 6px;
-    width: 16%;
+    width: 220px;
     height: 100px;
     font-size: 12px;
+}
+
+.colums.item3 p {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: 54px;
+}
+
+.colums.item3 h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: 20px;
 }
 
 figure.phone {
     margin: 0;
     position: relative;
-    top: 32px;
-    right: -20px;
+    left: -89.8%;
+    top: 150px;
 }
 
 div.colums.item4 {
     position: relative;
-    left: -45px;
-    top: 6px;
-    width: 16%;
+    left: 98px;
+    top: 3px;
+    width: 220px;
     height: 100px;
     font-size: 12px;
+}
+
+.colums.item4 h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: -35px;
+    top: 5px;
 }
 
 figure.bubble {
     margin: 0;
     position: relative;
     top: 32px;
-    right: 15px;
+    right: -70px;
 }
 
 div.colums.item5 {
     position: relative;
-    left: -45px;
-    top: 6px;
-    width: 16%;
+    left: 40px;
+    top: 5px;
+    width: 220px;
     height: 100px;
     font-size: 12px;
+}
+
+.colums.item5 h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: -53px;
+    top: 5px;
 }
 
 figure.star {
     margin: 0;
     position: relative;
     top: 32px;
-    right: 120px;
+    right: -15px;
 }
 
-div.colums.item5 {
+div.colums.item6 {
     position: relative;
-    left: -45px;
-    top: 6px;
-    width: 16%;
+    left: -60px;
+    top: 8px;
+    width: 220px;
     height: 100px;
     font-size: 12px;
+}
+
+.colums.item6 p {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: 45px;
+}
+
+.colums.item6 h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    position: relative;
+    left: -5px;
 }
