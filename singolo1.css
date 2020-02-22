@@ -34,23 +34,56 @@ div .logo {
     float: left;
 }
 
+.logo p {
+    position: relative;
+    top: -45px;
+    left: 146px;
+    display: inline-block;
+    margin: 0;
+    color: #f06c64;
+    font-size: 25px;
+}
+
 li {
     display: inline-block;
     margin-top: 20px;
-    padding: 10.2px 13px;
+    padding: 10px 12px;
 }
 
-span {
-    color: red;
+li:first-child {
+    color: #f06c64;
+}
+
+li:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: -3px;
+    border-radius: 50%;
+    height: 2px;
+    width: 2px;
+    margin: 0;
+    background-color: #767e9e;
+}
+
+li:last-child {
+    color: #f06c64;
+    margin-right: 28px;
+}
+
+.menu ul li:first-child {
+    color: #f06c64;
 }
 
 a {
     color: white;
+    ;
     text-decoration: none;
 }
 
-li:last-child {
-    margin-right: 28px;
+a:hover {
+    color: #f06c64;
 }
 
 .container {
@@ -67,12 +100,7 @@ li:last-child {
 }
 
 nav {
-    /* vertical-align: top; */
     float: right;
-    /* display: flex; */
-    /* height: 70px; */
-    /* width: 500px; */
-    /* vertical-align: top; */
 }
 
 main .container {
@@ -88,8 +116,6 @@ main .container {
 }
 
 .iphone2 {
-    /* margin-left: 150px; */
-    /* padding: 20px; */
     position: absolute;
     z-index: 10;
     top: 145px;
@@ -99,7 +125,7 @@ main .container {
 
 .shadow1 {
     position: absolute;
-    bottom: 340px;
+    bottom: 338px;
     left: 515px;
 }
 
@@ -165,9 +191,9 @@ footer .container {
 }
 
 .services {
-    width: 95%;
+    width: 93%;
     position: relative;
-    top: 30px;
+    top: 31px;
     left: 30px;
     padding: 10px;
 }
@@ -176,6 +202,7 @@ footer .container {
     line-height: 28px;
     font-size: 18px;
     font-weight: 200;
+    letter-spacing: 0.3px;
 }
 
 .colums {
@@ -224,20 +251,21 @@ div.colums.item1 {
 
 figure.pen {
     position: relative;
-    top: 13px;
+    top: 14px;
+    left: -2px;
 }
 
 figure.bulb {
     margin: 0;
     position: relative;
     top: 30px;
-    left: -12px;
+    left: -13px;
 }
 
 div.colums.item2 {
     position: relative;
-    top: 5px;
-    left: -50px;
+    top: 8px;
+    left: -49px;
     width: 220px;
     height: 100px;
     font-size: 12px;
@@ -273,6 +301,7 @@ div.colums.item3 {
     line-height: 22px;
     position: relative;
     left: 54px;
+    top: 3px;
 }
 
 .colums.item3 h2 {
@@ -281,13 +310,14 @@ div.colums.item3 {
     line-height: 22px;
     position: relative;
     left: 20px;
+    top: 2px;
 }
 
 figure.phone {
     margin: 0;
     position: relative;
     left: -89.8%;
-    top: 150px;
+    top: 152px;
 }
 
 div.colums.item4 {
@@ -304,15 +334,15 @@ div.colums.item4 {
     padding: 0;
     line-height: 22px;
     position: relative;
-    left: -35px;
-    top: 5px;
+    left: -37px;
+    top: 7px;
 }
 
 figure.bubble {
     margin: 0;
     position: relative;
     top: 32px;
-    right: -70px;
+    right: -69px;
 }
 
 div.colums.item5 {
@@ -337,7 +367,7 @@ figure.star {
     margin: 0;
     position: relative;
     top: 32px;
-    right: -15px;
+    right: -14px;
 }
 
 div.colums.item6 {
@@ -355,6 +385,7 @@ div.colums.item6 {
     line-height: 22px;
     position: relative;
     left: 45px;
+    top: 4px;
 }
 
 .colums.item6 h2 {
@@ -362,5 +393,6 @@ div.colums.item6 {
     padding: 0;
     line-height: 22px;
     position: relative;
-    left: -5px;
+    left: -4px;
+    top: 4px;
 }
