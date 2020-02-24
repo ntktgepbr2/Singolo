@@ -173,7 +173,7 @@ main .container {
     background-size: 1.25em 90%;
 }
 
-footer .container {
+section .container {
     margin-top: 0;
     font-size: 15px;
     height: 495px;
