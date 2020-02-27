@@ -1,12 +1,12 @@
         @font-face {
             font-family: 'Lato', sans-serif;
-            src: url('/assets/Lato-Bold') format('truetype');
+            src: url('/assets/Lato-Bold.ttf') format('truetype');
             font-weight: 900;
         }
         
         @font-face {
             font-family: 'Lato', sans-serif;
-            src: url('/assets/Lato-Regular') format('truetype');
+            src: url('/assets/Lato-Regular.ttf') format('truetype');
             font-style: normal;
             font-weight: normal;
         }
@@ -22,19 +22,20 @@
             font-family: 'Lato', sans-serif;
             font-size: 0px;
             font-weight: 400;
+            text-align: justify;
         }
         
         .container {
             width: 100%;
             height: 100%;
             max-width: 1020px;
-            padding: 20px;
+            padding: 0;
             margin: 0 auto;
         }
         
         .portfolio .container {
             width: 1020px;
-            height: 870px;
+            height: 864px;
             background-color: #2d303a;
         }
         
@@ -43,27 +44,34 @@
             text-decoration-line: none;
         }
         
-        .portfolio_header h1 {
+        .portfolio__header h1 {
+            padding: 70px 40px;
+            padding-bottom: 0;
             font-size: 30px;
             line-height: 18px;
             color: #666d89;
             font-family: "Lato";
-            font-weight: 900;
+            font-weight: bold;
             text-align: left;
+            letter-spacing: 0.5px;
         }
         
-        .portfolio_header p {
+        .portfolio__header p {
+            padding: 26px 40px;
+            padding-bottom: 0;
             width: 940px;
-            height: 57px;
+            height: 37px;
             font-size: 18px;
             line-height: 30px;
             color: #767e9e;
             font-family: "Lato";
             font-weight: 300;
             text-align: left;
+            letter-spacing: 0.5px;
         }
         
-        .cards_filter {
+        .cards-filter {
+            padding: 3px 41px;
             font-size: 12px;
             line-height: 22px;
             color: #767e9e;
@@ -71,19 +79,84 @@
             font-weight: 400;
         }
         
-        .cards_filter span {
-            padding: 5px;
-            width: 57px;
+        .cards-filter span {
+            margin: 4px;
+            padding: 4px 4.8px;
+            width: auto;
+            font-weight: 500;
             height: 22px;
             border-radius: 5px;
             background-color: transparent;
             border: 1px solid #666d89;
         }
         
-        .cards_collection {
+        a:hover,
+        span:hover {
+            color: white;
+            border-color: white;
+        }
+        
+        .cards-filter span:first-of-type {
+            position: relative;
+            left: -3px;
+            top: 0px;
+        }
+        
+        .cards-collection {
             display: grid;
-            grid-column-gap: 55px;
-            grid-row-gap: -50px;
+            grid-column-gap: 53px;
+            grid-row-gap: 7px;
             grid-template-columns: 187px 187px 187px 187px;
-            grid-template-rows: 220px 220px 220px 220px;
+            grid-template-rows: 200px 200px 200px 200px;
+            padding: 16px 40px;
+        }
+        
+        .bottom-line {
+            padding: 0;
+            margin: 0 auto;
+            width: 1020px;
+            height: 6px;
+            background-color: #323746;
+        }
+        
+        .about-us .container {
+            width: 1020px;
+            height: 728px;
+            background-color: #f2f2f2;
+            text-align: justify;
+        }
+        
+        .about-us__person {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px;
+            padding: 215px 40px;
+        }
+        
+        .about-us__person h2 {
+            padding: 20px 21px;
+            padding-bottom: 0;
+            font-size: 30px;
+            line-height: 18px;
+            color: #666d89;
+            font-family: "Lato";
+            font-weight: bold;
+            text-align: left;
+            letter-spacing: 0.05px;
+        }
+        
+        .about-us__person p {
+            padding: 26px 40px;
+            padding-right: 0;
+            padding-bottom: 0;
+            width: 300px;
+            height: 37px;
+            font-size: 18px;
+            line-height: 30px;
+            color: #767e9e;
+            font-family: "Lato";
+            font-weight: 300;
+            text-align: justify;
+            letter-spacing: 0.5px;
         }
