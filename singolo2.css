@@ -90,8 +90,8 @@
             border: 1px solid #666d89;
         }
         
-        a:hover,
-        span:hover {
+        .cards-filter a:hover,
+        .cards-filter span:hover {
             color: white;
             border-color: white;
         }
@@ -109,6 +109,10 @@
             grid-template-columns: 187px 187px 187px 187px;
             grid-template-rows: 200px 200px 200px 200px;
             padding: 16px 40px;
+        }
+        
+        .cards-collection figure:nth-child(n+13) {
+            display: none;
         }
         
         .bottom-line {
@@ -168,10 +172,6 @@
             padding-bottom: 0;
         }
         
-        h3:nth-of-type(3) {
-            word-spacing: 52px;
-        }
-        
         .about-us__person p {
             width: 300px;
             height: 50px;
@@ -181,7 +181,7 @@
             font-family: "Lato";
             font-weight: 400;
             text-align: left;
-            padding: 7px 2px;
+            padding: 8px 2px;
         }
         
         .about-us__links {
@@ -190,4 +190,12 @@
         
         .about-us__links a {
             margin-right: 5px
+        }
+        
+        .about-us .bottom-line {
+            background-color: #ffffff;
+        }
+        
+        .about-us__links a:hover {
+            filter: invert(0.5) sepia(1) hue-rotate(200deg) saturate(4) brightness(1);
         }
