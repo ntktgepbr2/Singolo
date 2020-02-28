@@ -170,6 +170,8 @@
             text-align: left;
             padding: 18px 1px;
             padding-bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
         }
         
         .about-us__person p {
