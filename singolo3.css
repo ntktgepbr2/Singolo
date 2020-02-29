@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('/assets/Lato-Bold.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('/assets/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1020px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.get-a-quote .container {
+    width: 1020px;
+    height: 648px;
+    background-color: #f06c64;
+}
+
+.get-a-quote__header h1 {
+    padding: 64px 20px 0 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.2px;
+    word-spacing: -1.5px;
+}
+
+.get-a-quote__header p {
+    padding: 26px 40px 0 40px;
+    width: 1;
+    height: 37px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+.sidebar__contact-information {
+    display: block;
+    float: right;
+    width: 300px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.get-a-quote__form {
+    padding: 65px 40px;
+    padding-right: 10px;
+    width: 630px;
+}
+
+input {
+    margin-bottom: 14px;
+    width: 618px;
+    height: 38px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #d6564f;
+}
+
+input::placeholder {
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.1px;
+}
+
+textarea {
+    width: 618px;
+    height: 202px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #d6564f;
+}
+
+textarea::placeholder {
+    padding: 8px 13px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
