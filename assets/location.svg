@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 11" width="7" height="11">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<path id="Path 1" fill-rule="evenodd" class="shp0" d="M7 3.44C7 6.72 3.5 11 3.5 11C3.5 11 0 6.72 0 3.44C0 1.54 1.57 0 3.5 0C5.43 0 7 1.54 7 3.44ZM5.39 3.48C5.39 2.45 4.54 1.62 3.5 1.62C2.46 1.62 1.61 2.45 1.61 3.48C1.61 4.5 2.46 5.34 3.5 5.34C4.54 5.34 5.39 4.5 5.39 3.48Z" />
+</svg>
