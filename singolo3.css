@@ -218,6 +218,7 @@ footer .container {
 }
 
 .submit-button input {
+    margin-top: 14px;
     width: 80px;
     color: #f0d8d9;
     opacity: 70%;
