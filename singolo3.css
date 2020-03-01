@@ -1,14 +1,22 @@
 @font-face {
     font-family: 'Lato', sans-serif;
-    src: url('/assets/Lato-Bold.ttf') format('truetype');
+    src: url('/assets/Lato-Black.ttf') format('truetype');
     font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato', sans-serif;
     src: url('/assets/Lato-Regular.ttf') format('truetype');
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('/assets/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
 }
 
 * {
@@ -36,12 +44,12 @@ body {
 }
 
 .get-a-quote__header h1 {
-    padding: 64px 20px 0 40px;
+    padding: 70px 20px 0 40px;
     font-size: 30px;
     line-height: 18px;
     color: #f0d8d9;
     font-family: "Lato";
-    font-weight: bold;
+    font-weight: 900;
     text-align: left;
     letter-spacing: 0.2px;
     word-spacing: -1.5px;
@@ -49,8 +57,6 @@ body {
 
 .get-a-quote__header p {
     padding: 26px 40px 0 40px;
-    width: 1;
-    height: 37px;
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
@@ -61,21 +67,9 @@ body {
     text-align: justify;
 }
 
-.sidebar__contact-information {
-    display: block;
-    float: right;
-    width: 300px;
-    height: 175px;
-    font-size: 12px;
-    line-height: 22px;
-    color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 400;
-    text-align: left;
-}
-
 .get-a-quote__form {
-    padding: 65px 40px;
+    display: flex;
+    padding: 42px 40px;
     padding-right: 10px;
     width: 630px;
 }
@@ -92,8 +86,8 @@ input {
 input::placeholder {
     padding-left: 12px;
     font-size: 12px;
-    line-height: 22px;
     color: #f48c8f;
+    line-height: 22px;
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
@@ -106,14 +100,134 @@ textarea {
     border-radius: 5px;
     border: 1px solid transparent;
     background-color: #d6564f;
+    resize: none;
 }
 
 textarea::placeholder {
     padding: 8px 13px;
     font-size: 12px;
     line-height: 22px;
-    color: #f48c8f;
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+    color: #f48c8f;
+}
+
+.sidebar {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.sidebar__contact-information {
+    padding-left: 20px;
+    padding-bottom: 0px;
+    width: 300px;
+    height: 120px;
+}
+
+.sidebar__contact-information p {
+    padding-top: 6px;
+    text-align: justify;
+    word-spacing: -2px;
+}
+
+.sidebar__contact-information h2 {
+    letter-spacing: 0.2px;
+}
+
+.sidebar__list a {
+    text-decoration-line: none;
+    color: #f0d8d9;
+}
+
+.sidebar__list {
+    padding: 17px 37px;
+    word-spacing: -0.5px;
+}
+
+ul li:nth-of-type(1) {
+    list-style-image: url('assets/location.svg');
+    list-style-position: outside;
+    padding-left: 5px;
+}
+
+ul li:nth-of-type(2) {
+    list-style-image: url('assets/phone-contact.svg');
+    list-style-position: outside;
+    padding-left: 4px;
+    margin-left: 2px;
+}
+
+ul li:nth-of-type(3) {
+    list-style-image: url('assets/mail.svg');
+    list-style-position: outside;
+    padding-left: 3px;
+    margin-left: 3px;
+}
+
+.bottom-line {
+    padding: 0;
+    margin: 0 auto;
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+footer .container {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+}
+
+.footer__links {
+    float: right;
+    padding-top: 21px;
+    padding-right: 38px;
+}
+
+.footer__links a {
+    padding-left: 2px;
+}
+
+.footer__links a:hover {
+    filter: invert(0.5) sepia(1) hue-rotate(200deg) saturate(4) brightness(1);
+}
+
+.footer__links a:nth-child(n+1) {
+    margin-left: -1px;
+}
+
+.copyrights {
+    padding: 28px 40px;
+    width: 100px;
+    color: #666d89;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    word-spacing: -0.5px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button input {
+    width: 80px;
+    color: #f0d8d9;
+    opacity: 70%;
+    background-color: #2d303a;
+}
+
+.submit-button input:hover {
+    width: 80px;
+    color: #f0d8d9;
+    opacity: 100%;
+    background-color: #2d303a;
+    box-shadow: 3px 3px 3px 0px #859DEA;
 }

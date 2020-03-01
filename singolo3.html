@@ -21,10 +21,10 @@
             <div class="get-a-quote__form">
                 <form id="quote-form" method="POST" action="">
                     <div clss="form__input-1">
-                        <input type="text" name="name-1" placeholder="Name (Required)">
+                        <input type="text" name="name-1" placeholder="Name (Required)" required>
                     </div>
                     <div clss="form__input-2">
-                        <input type="email" name="email" placeholder="Email (Required)">
+                        <input type="email" name="email" placeholder="Email (Required)" required>
                     </div>
                     <div clss="form__input-3">
                         <input type="text" name="subject" placeholder="Subject">
@@ -32,23 +32,48 @@
                     <div class="form__textarea">
                         <textarea rows=10 cols=50 name="describe" placeholder="Describe your project in detail..."></textarea>
                     </div>
+                    <div class="submit-button">
+                        <input type="submit" name="submit-btn" value="Send">
+                    </div>
 
                 </form>
+                <aside class="sidebar">
+                    <div class="sidebar__contact-information">
+                        <h2>Contact Information</h2>
+                        <p>Suspendisse at nisi at tortor ego sivius rabio lobortis feugiat. Sed varius lacus vel lobortis laoreet. Donec suscipit, justo sed sollicitudin dignissim, magna augue ullamcorper ex, eget vestibulum risus arcu nec erat. Orci.</p>
+                    </div>
+                    <div class="sidebar__list">
+                        <ul>
+                            <li class="lost-city"><a href="">Elm St. 14/05 Lost City</a></li>
+                            <li class="phone-number"><a href="tel:03528 331 86 35">03528 331 86 35</a></li>
+                            <li class="email-info"><a href="maito:info@singolo.com">info@singolo.com</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
 
-            <aside class="sidebar">
-                <div class="sidebar__contact-information">
-                    <h2>Contact Information</h2>
-                    <p>Suspendisse at nisi at tortor lobortis feugiat. Sed varius lacus vel lobortis laoreet. Donec suscipit, justo sed sollicitudin dignissim, magna augue ullamcorper ex, eget vestibulum risus arcu nec erat. Orci.</p>
-                </div>
-            </aside>
+
         </div>
 
 
 
 
     </section>
+    <div class="bottom-line"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook"></a>
+                <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+"></a>
+                <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter"></a>
+                <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin"></a>
+            </div>
+            <div class="copyrights">
+                <p>© Copyright 2013</p>
+            </div>
 
+        </div>
+    </footer>
 
 
 
