@@ -60,7 +60,6 @@
             padding: 26px 40px;
             padding-bottom: 0;
             width: 940px;
-            height: 37px;
             font-size: 18px;
             line-height: 30px;
             color: #767e9e;
@@ -71,7 +70,8 @@
         }
         
         .cards-filter {
-            padding: 3px 41px;
+            padding: 10px 41px;
+            padding-bottom: 3px;
             font-size: 12px;
             line-height: 22px;
             color: #767e9e;
@@ -135,7 +135,7 @@
             grid-gap: 20px;
             grid-template-columns: 300px 300px 300px;
             grid-template-rows: 300px 80px 100px;
-            padding: 64px 38px;
+            padding: 41px 38px;
         }
         
         .about-us__header h1 {
@@ -153,7 +153,7 @@
             padding-right: 0;
             padding-bottom: 0;
             width: 940px;
-            height: 37px;
+            /* height: 37px; */
             font-size: 18px;
             line-height: 30px;
             color: #767e9e;
@@ -200,4 +200,4 @@
         
         .about-us__links a:hover {
             filter: invert(0.5) sepia(1) hue-rotate(200deg) saturate(4) brightness(1);
-        }
+   
