@@ -74,7 +74,6 @@ td {
 }
 
 body {
-    /* line-height: 1; */
     color: black;
     background: white;
 }
@@ -350,6 +349,13 @@ header .container {
     font-weight: 900;
 }
 
+.header-style-2 {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
 .our-services__header h1 {
     padding-top: 72px;
     padding-left: 40px;
@@ -359,7 +365,7 @@ header .container {
 .our-services__colums {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 300px 300px 250px;
     grid-template-rows: 100px 100px;
     grid-auto-flow: row;
     padding-left: 120px;
@@ -373,11 +379,7 @@ header .container {
 }
 
 .our-services__colums h2 {
-    font-size: 18px;
-    line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
     word-spacing: 0.5px;
     overflow: hidden;
 }
@@ -533,11 +535,7 @@ header .container {
 
 .about-us__person h3 {
     padding-top: 14px;
-    font-size: 18px;
-    line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -550,7 +548,7 @@ header .container {
 }
 
 .person__links {
-    padding-top: 111px;
+    padding-top: 109px;
 }
 
 .person__links a {
@@ -579,28 +577,20 @@ header .container {
     width: 1020px;
     height: 648px;
     background-color: #f06c64;
+    color: #f0d8d9;
 }
 
 .get-a-quote__header h1 {
     padding: 70px 20px 0 40px;
-    font-size: 30px;
-    line-height: 18px;
-    color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 900;
     letter-spacing: 0.2px;
     word-spacing: -1.5px;
 }
 
 .get-a-quote__header p {
     padding: 26px 40px 0 40px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 300;
     letter-spacing: 0.5px;
     text-align: justify;
+    color: #f0d8d9;
 }
 
 .get-a-quote__form {
@@ -648,11 +638,7 @@ textarea::placeholder {
 }
 
 .sidebar {
-    font-size: 12px;
-    line-height: 22px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 400;
 }
 
 .sidebar__contact-information {
@@ -669,11 +655,7 @@ textarea::placeholder {
 }
 
 .sidebar__contact-information h2 {
-    font-size: 18px;
-    line-height: 18px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 900;
     letter-spacing: 0.2px;
 }
 
