@@ -111,6 +111,12 @@ q {
 
 @font-face {
   font-family: "Lato";
+  src: url("assets/Lato-Black.ttf.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lato";
   src: url("assets/Lato-Bold.ttf") format("truetype");
   font-weight: 700;
 }
@@ -143,10 +149,11 @@ header .container {
 .header {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .header__logo {
-  margin-top: 44px;
+  margin-top: 41px;
   margin-left: 40px;
   letter-spacing: -0.5px;
 }
@@ -154,20 +161,20 @@ header .container {
 .header__logo p {
   position: relative;
   left: 106px;
-  bottom: 7px;
+  bottom: 6px;
   color: #f06c64;
 }
 
 .header__menu {
   margin-right: 14px;
   font-size: 12px;
+  line-height: 6px;
 }
 
 .header__menu li {
   display: inline-block;
   padding-top: 47px;
-  padding-right: 24px;
-  letter-spacing: -0.02px;
+  padding-right: 24.5px;
 }
 
 .header__menu li:not(:last-child)::after {
@@ -345,7 +352,7 @@ header .container {
   font-size: 30px;
   line-height: 18px;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .header-style-2 {
@@ -356,9 +363,9 @@ header .container {
 }
 
 .our-services__header h1 {
-  padding-top: 72px;
+  padding-top: 71px;
   padding-left: 40px;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.3px;
 }
 
 .our-services__colums {
@@ -368,7 +375,7 @@ header .container {
   grid-template-rows: 100px 100px;
   grid-auto-flow: row;
   padding-left: 120px;
-  padding-top: 45px;
+  padding-top: 46px;
   text-align: justify;
 }
 
@@ -384,7 +391,7 @@ header .container {
 }
 
 .item5__content h2 {
-  word-spacing: -1.5px;
+  word-spacing: -0.5px;
 }
 
 .our-services__colums p {
@@ -406,7 +413,7 @@ header .container {
 
 .content_position p {
   position: relative;
-  top: 10px;
+  top: 8px;
   left: 0;
 }
 
@@ -418,7 +425,7 @@ header .container {
 
 .content_position_bottom h2 {
   position: relative;
-  top: 4px;
+  top: 3px;
   left: 0px;
 }
 
@@ -434,29 +441,26 @@ header .container {
 }
 
 .portfolio__header h1 {
-  padding: 70px 40px;
+  padding: 71px 41px;
   padding-bottom: 0;
   color: #666d89;
   letter-spacing: 0.5px;
 }
 
 .portfolio__header p {
-  padding: 26px 40px;
+  padding: 25px 40px;
   padding-bottom: 0;
-  letter-spacing: 0.5px;
 }
 
 .cards-filter {
-  padding: 10px 41px;
-  padding-bottom: 3px;
+  padding-top: 10px;
+  padding-left: 41px;
   color: #767e9e;
 }
 
 .cards-filter span {
   margin: 4px;
-  padding: 4px 4.8px;
-  font-weight: 500;
-  height: 22px;
+  padding: 2.5px 5.1px;
   border-radius: 5px;
   background-color: transparent;
   border: 1px solid #666d89;
@@ -476,10 +480,16 @@ header .container {
 
 .cards-collection {
   display: grid;
+  justify-content: stretch;
   grid-column-gap: 53px;
   grid-row-gap: 7px;
   grid-template-columns: 187px 187px 187px 187px;
   grid-template-rows: 200px 200px 200px 200px;
+  padding-top: 14px;
+}
+
+.cards-collection figure {
+  align-self: center;
 }
 
 .cards-collection figure:nth-child(n + 13) {
@@ -533,7 +543,7 @@ header .container {
 }
 
 .about-us__person h3 {
-  padding-top: 14px;
+  padding-top: 12px;
   color: #666d89;
   white-space: nowrap;
   overflow: hidden;
@@ -541,7 +551,7 @@ header .container {
 }
 
 .about-us__person p {
-  padding-top: 8px;
+  padding-top: 10px;
   width: 300px;
   color: #767e9e;
 }
@@ -586,7 +596,7 @@ header .container {
 }
 
 .get-a-quote__header p {
-  padding: 26px 40px 0 40px;
+  padding: 25px 40px 0 40px;
   letter-spacing: 0.5px;
   text-align: justify;
   color: #f0d8d9;
@@ -641,14 +651,14 @@ textarea::placeholder {
 }
 
 .sidebar__contact-information {
-  padding-top: 2px;
+  padding-top: 1px;
   padding-left: 20px;
   width: 300px;
   height: 120px;
 }
 
 .sidebar__contact-information p {
-  padding-top: 8px;
+  padding-top: 10px;
   text-align: justify;
   word-spacing: -2px;
 }
@@ -664,9 +674,8 @@ textarea::placeholder {
 }
 
 .sidebar__list {
-  padding-top: 14px;
-  padding-left: 38px;
-  word-spacing: -0.5px;
+  padding-top: 16px;
+  padding-left: 37px;
 }
 
 .sidebar__list ul li:nth-of-type(1) {
