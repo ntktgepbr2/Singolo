@@ -110,20 +110,20 @@ q {
 /*end of reset css*/
 
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   src: url("/assets/Lato-Bold.ttf") format("truetype");
   font-weight: 900;
 }
 
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   src: url("/assets/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   src: url("/assets/Lato-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
@@ -329,7 +329,7 @@ header .container {
   line-height: 30px;
   width: 940px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   text-align: justify;
 }
@@ -337,21 +337,21 @@ header .container {
 .paragraph-style-2 {
   font-size: 12px;
   line-height: 22px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
 .header-style {
   font-size: 30px;
   line-height: 18px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
 .header-style-2 {
   font-size: 18px;
   line-height: 18px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
@@ -613,7 +613,7 @@ input::placeholder {
   font-size: 12px;
   color: #f48c8f;
   line-height: 22px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   letter-spacing: 0.1px;
 }
@@ -631,7 +631,7 @@ textarea::placeholder {
   padding: 4px 12px;
   font-size: 12px;
   line-height: 22px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #f48c8f;
 }
