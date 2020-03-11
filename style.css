@@ -111,20 +111,20 @@ q {
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/Lato-Bold.ttf") format("truetype");
-  font-weight: 900;
+  src: url("assets/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/Lato-Regular.ttf") format("truetype");
+  src: url("assets/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/Lato-Light.ttf") format("truetype");
+  src: url("assets/Lato-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
@@ -345,14 +345,14 @@ header .container {
   font-size: 30px;
   line-height: 18px;
   font-family: "Lato", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .header-style-2 {
   font-size: 18px;
   line-height: 18px;
   font-family: "Lato", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .our-services__header h1 {
