@@ -111,7 +111,7 @@ q {
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Black.ttf.ttf") format("truetype");
+  src: url("assets/Lato-Black.ttf") format("truetype");
   font-weight: 900;
 }
 
@@ -363,9 +363,8 @@ header .container {
 }
 
 .our-services__header h1 {
-  padding-top: 71px;
-  padding-left: 40px;
-  letter-spacing: 0.3px;
+  padding-top: 69px;
+  padding-left: 39px;
 }
 
 .our-services__colums {
@@ -375,7 +374,7 @@ header .container {
   grid-template-rows: 100px 100px;
   grid-auto-flow: row;
   padding-left: 120px;
-  padding-top: 46px;
+  padding-top: 48px;
   text-align: justify;
 }
 
@@ -441,10 +440,9 @@ header .container {
 }
 
 .portfolio__header h1 {
-  padding: 71px 41px;
+  padding: 68px 40px;
   padding-bottom: 0;
   color: #666d89;
-  letter-spacing: 0.5px;
 }
 
 .portfolio__header p {
@@ -453,7 +451,7 @@ header .container {
 }
 
 .cards-filter {
-  padding-top: 10px;
+  padding-top: 12px;
   padding-left: 41px;
   color: #767e9e;
 }
@@ -485,7 +483,7 @@ header .container {
   grid-row-gap: 7px;
   grid-template-columns: 187px 187px 187px 187px;
   grid-template-rows: 200px 200px 200px 200px;
-  padding-top: 14px;
+  padding-top: 15px;
 }
 
 .cards-collection figure {
@@ -504,10 +502,9 @@ header .container {
 }
 
 .about-us__header h1 {
-  padding: 70px 42px;
+  padding: 68px 40px;
   padding-bottom: 0;
   color: #666d89;
-  word-spacing: -1px;
 }
 
 .about-us__header p {
@@ -527,7 +524,7 @@ header .container {
   justify-content: center;
   grid-template-columns: 320px 320px 320px;
   grid-template-rows: 300px 100px 50px;
-  padding-top: 44px;
+  padding-top: 46px;
 }
 
 .person__adam {
@@ -590,9 +587,7 @@ header .container {
 }
 
 .get-a-quote__header h1 {
-  padding: 70px 20px 0 40px;
-  letter-spacing: 0.2px;
-  word-spacing: -1.5px;
+  padding: 68px 20px 0 40px;
 }
 
 .get-a-quote__header p {
@@ -604,7 +599,7 @@ header .container {
 
 .get-a-quote__form {
   display: flex;
-  padding: 42px 40px;
+  padding: 44px 40px;
   padding-right: 10px;
   width: 630px;
 }
