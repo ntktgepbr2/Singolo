@@ -111,13 +111,13 @@ q {
 
 @font-face {
   font-family: "Lato", sans-serif;
-  src: url("/assets/Lato-Bold") format("truetype");
+  src: url("/assets/Lato-Bold.ttf") format("truetype");
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Lato", sans-serif;
-  src: url("/assets/Lato-Regular") format("truetype");
+  src: url("/assets/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
