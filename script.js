@@ -5,10 +5,11 @@ const SUBMIT_BTN = document.getElementById("btn");
 const FORM = document.getElementById("quote-form");
 const COLLECTION = document.getElementById("collection");
 const COLLECTION_BTNS = document.querySelectorAll(".cards-filter a");
-const items = document.querySelectorAll(".item");
+let sliderContainer = document.getElementById("slider-container");
+let items = document.querySelectorAll(".item");
 let currentItem = 0;
 let isEnabled = true;
-
+// Slider
 function changeCurrentItem(n) {
     currentItem = (n + items.length) % items.length;
 }
@@ -16,18 +17,29 @@ function changeCurrentItem(n) {
 function hideItem(direction) {
     isEnabled = false;
     items[currentItem].classList.add(direction);
-    items[currentItem].addEventListener("animationend", function() {
-        this.classList.remove("active-slide", direction);
-    });
+    items[currentItem].addEventListener(
+        "animationend",
+        function() {
+            console.log(2);
+            this.classList.remove("active-slide", direction);
+        }, { once: true }
+    );
+    sliderContainer.classList.toggle("container-blue");
 }
 
 function showItem(direction) {
+    console.log(direction);
     items[currentItem].classList.add("next", direction);
-    items[currentItem].addEventListener("animationend", function() {
-        this.classList.remove("next", direction);
-        this.classList.add("active-slide");
-        isEnabled = true;
-    });
+    console.log(items[currentItem].classList);
+    items[currentItem].addEventListener(
+        "animationend",
+        function() {
+            console.log(1);
+            this.classList.remove("next", direction);
+            this.classList.add("active-slide");
+            isEnabled = true;
+        }, { once: true }
+    );
 }
 
 function previousItem(n) {
@@ -72,7 +84,7 @@ function onScroll(onScroll) {
         }
     });
 }
-
+//Collection shuffle
 COLLECTION_BTNS.forEach(el => {
     el.addEventListener("click", event => {
         event.preventDefault();
@@ -98,7 +110,7 @@ COLLECTION.addEventListener("click", event => {
         event.target.classList.add("border");
     }
 });
-
+//
 BUTTON.addEventListener("click", event => {
     const subject = document.getElementById("subject").value.toString();
     if (subject == "") {

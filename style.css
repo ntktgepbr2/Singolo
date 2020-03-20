@@ -224,13 +224,13 @@ header .container {
 .slider .container {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-    transition: all ease 1s;
+    transition: all ease 2s;
 }
 
 .slider .container-blue {
     border-bottom: 6px solid #348bf0;
     background-color: #648bf0;
-    transition: all ease 1s;
+    transition: all ease 2s;
 }
 
 .both-iphones {
@@ -247,10 +247,24 @@ header .container {
     left: 0%;
 }
 
+.item {
+    display: none;
+}
+
 .next {
     position: absolute;
     top: 0%;
     left: 0%;
+}
+
+.active-slide,
+.next {
+    display: block;
+}
+
+.position {
+    position: relative;
+    width: 100%;
 }
 
 .hidden {
@@ -293,21 +307,21 @@ header .container {
 .landscape__frame {
     position: absolute;
     top: 36px;
-    right: 218px;
+    right: 138px;
     z-index: 2;
 }
 
 .landscape__shadow {
     position: absolute;
     top: 158px;
-    right: 70px;
+    right: -10px;
     z-index: 0;
 }
 
 .landscape__wallpaper {
     position: absolute;
     top: 53px;
-    right: 40px;
+    right: -40px;
     z-index: 3;
 }
 
@@ -342,28 +356,24 @@ header .container {
 
 .to-left {
     animation-name: left;
+    animation-duration: 2s;
 }
 
 .to-right {
     animation-name: right;
     animation-direction: reverse;
+    animation-duration: 2s;
 }
 
 .from-left {
     animation-name: left;
+    animation-direction: reverse;
+    animation-duration: 2s;
 }
 
 .from-right {
     animation-name: right;
-}
-
-.item {
-    display: none;
-}
-
-.active-slide,
-.next {
-    display: block;
+    animation-duration: 2s;
 }
 
 @keyframes left {
@@ -375,13 +385,22 @@ header .container {
     }
 }
 
-@keyframes left {
+@keyframes right {
     from {
-        left: 10%0;
+        left: 100%;
     }
     to {
         left: 0;
     }
+}
+
+.item {
+    display: none;
+}
+
+.active-slide,
+.next {
+    display: block;
 }
 
 .btn-arrow:hover,
