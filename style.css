@@ -268,7 +268,7 @@ header .container {
 }
 
 .hidden {
-    display: none;
+    opacity: 0;
 }
 
 .both-iphones__portrait {
@@ -282,21 +282,23 @@ header .container {
 .portrait__frame {
     position: absolute;
     top: 37px;
-    left: 72px;
+    left: 12px;
     z-index: 2;
 }
 
 .portrait__wallpaper {
+    display: block;
     position: absolute;
-    bottom: 10px;
-    left: 72px;
+    bottom: 122px;
+    left: 26px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .portrait__shadow {
     position: absolute;
     top: 37px;
-    left: 72px;
+    left: 12px;
     z-index: 0;
 }
 
@@ -307,22 +309,24 @@ header .container {
 .landscape__frame {
     position: absolute;
     top: 36px;
-    right: 138px;
+    right: 158px;
     z-index: 2;
 }
 
 .landscape__shadow {
     position: absolute;
     top: 158px;
-    right: -10px;
+    right: 10px;
     z-index: 0;
 }
 
 .landscape__wallpaper {
+    display: block;
     position: absolute;
-    top: 53px;
-    right: -40px;
+    top: 171px;
+    right: 102px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .arrow-right {
@@ -719,8 +723,9 @@ header .container {
 }
 
 input {
+    padding-left: 10px;
     margin-bottom: 16px;
-    width: 618px;
+    width: 608px;
     height: 34px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -728,7 +733,7 @@ input {
 }
 
 input::placeholder {
-    padding-left: 14px;
+    padding-left: 5px;
     font-size: 12px;
     color: #f48c8f;
     line-height: 22px;
@@ -738,8 +743,9 @@ input::placeholder {
 }
 
 textarea {
-    width: 614px;
-    height: 196px;
+    padding: 10px;
+    width: 598px;
+    height: 182px;
     border-radius: 5px;
     border: 1px solid transparent;
     background-color: #d6564f;
@@ -747,7 +753,7 @@ textarea {
 }
 
 textarea::placeholder {
-    padding: 4px 12px;
+    padding-left: 4px;
     font-size: 12px;
     line-height: 22px;
     font-family: "Lato", sans-serif;
@@ -860,20 +866,18 @@ footer .container {
 }
 
 #message-block .container {
-    width: 100vw;
-    height: 100vh;
-}
-
-#message-block.hidden {
-    display: none;
+    width: 300px;
+    height: 300px;
 }
 
 #message {
     position: fixed;
-    left: 45%;
+    left: 42%;
     top: 50%;
+    padding: 40px;
     border: 2px solid black;
     text-align: center;
     z-index: 99;
-    background: black;
+    color: #666d89;
+    background: #f0d8d9;
 }

@@ -282,12 +282,12 @@
                     </p>
                 </div>
                 <div class="get-a-quote__form">
-                    <form id="quote-form" method="POST" action="" onsubmit="return validateForm()">
+                    <form id="quote-form" method="POST" action="" onsubmit="return addFormHandler()">
                         <div class="form__input-1">
-                            <input type="text" name="name-1" placeholder="Name (Required)" required />
+                            <input type="text" name="name-1" placeholder="Name (Required)" required id="inputName" />
                         </div>
                         <div class="form__input-2">
-                            <input type="email" name="email" placeholder="Email (Required)" required />
+                            <input type="email" name="email" placeholder="Email (Required)" required id="inputMail" />
                         </div>
                         <div class="form__input-3">
                             <input type="text" name="subject" placeholder="Subject" id="subject" />
@@ -303,13 +303,9 @@
                         <div id="message">
                             <p>Письмо отправлено</p>
                             <br />
-                            <p class="message-block theme">
-                                Тема: <span id="theme">1ццццц</span>
-                            </p>
+                            <p class="message-block theme"></p>
                             <br />
-                            <p class="message-block description">
-                                Описание: <span id="description">1221314151121212</span>
-                            </p>
+                            <p class="message-block description"></p>
                             <br />
                             <button id="close-btn">OK</button>
                         </div>

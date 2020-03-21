@@ -1,7 +1,14 @@
 const MENU = document.getElementById("menu");
-const BUTTON = document.getElementById("btn");
 const CLOSE_BUTTON = document.getElementById("close-btn");
 const SUBMIT_BTN = document.getElementById("btn");
+const messageBlock = document.getElementById("message-block");
+const message = document.getElementById("message");
+const inputName = document.getElementById("inputName");
+const inputMail = document.getElementById("inputMail");
+const inputSubject = document.getElementById("subject");
+const inputDescribe = document.getElementById("describe");
+const messageTheme = messageBlock.querySelector(".theme");
+const messageDescription = messageBlock.querySelector(".description");
 const FORM = document.getElementById("quote-form");
 const COLLECTION = document.getElementById("collection");
 const COLLECTION_BTNS = document.querySelectorAll(".cards-filter a");
@@ -9,6 +16,17 @@ let sliderContainer = document.getElementById("slider-container");
 let items = document.querySelectorAll(".item");
 let currentItem = 0;
 let isEnabled = true;
+const screen = document.querySelector(".landscape__wallpaper");
+const screenTwo = document.querySelector(".portrait__wallpaper");
+
+//Screen OnOff
+screen.onclick = function() {
+    screen.classList.toggle("hidden");
+};
+screenTwo.onclick = function() {
+    screenTwo.classList.toggle("hidden");
+};
+
 // Slider
 function changeCurrentItem(n) {
     currentItem = (n + items.length) % items.length;
@@ -65,6 +83,7 @@ document.querySelector(".arrow-right").addEventListener("click", function() {
 });
 
 //Скрол с переключением ссылок
+
 document.addEventListener("scroll", onScroll);
 
 function onScroll(onScroll) {
@@ -110,43 +129,47 @@ COLLECTION.addEventListener("click", event => {
         event.target.classList.add("border");
     }
 });
-//
-BUTTON.addEventListener("click", event => {
-    const subject = document.getElementById("subject").value.toString();
-    if (subject == "") {
-        document.getElementById("theme").innerText = "Без темы";
-    } else {
-        document.getElementById("theme").innerText = subject;
-    }
-    document.getElementById("theme").innerText = subject;
-    document.getElementById("message-block").classList.remove("hidden");
-});
+//Form submit
+window.onload = function() {
+    addMessageBlockHandlers();
+    addFormHandler();
+};
+const showMessageBlock = () => {
+    messageBlock.classList.remove("hidden");
+};
 
-BUTTON.addEventListener("click", event => {
-    const describe = document.getElementById("describe").value.toString();
-    if (describe == "") {
-        document.getElementById("describe").innerText = "Без описания";
-    } else {
-        document.getElementById("describe").innerText = describe;
-    }
-    document.getElementById("description").innerText = describe;
-    document.getElementById("message-block").classList.remove("hidden");
-});
+const clear = () => {
+    inputName.value = "";
+    inputMail.value = "";
+    inputSubject.value = "";
+    inputDescribe.value = "";
+};
 
-CLOSE_BUTTON.addEventListener("click", event => {
-    document.getElementById("theme").innerText = "";
-    document.getElementById("description").innerText = "";
-    document.getElementById("message-block").classList.add("hidden");
-});
+const hideMessageBlock = () => {
+    messageBlock.classList.add("hidden");
+    clear();
+};
+const addMessageBlockHandlers = () => {
+    CLOSE_BUTTON.addEventListener("click", () => {
+        hideMessageBlock();
+    });
+};
+const addText = (name, str, def) => {
+    return !str.length ? def : name + str;
+};
+const contentMessageBlock = () => {
+    messageTheme.innerText = addText("Тема: ", inputSubject.value, "Без темы");
+    messageDescription.innerText = addText(
+        "Описание: ",
+        inputDescribe.value,
+        "Без описания"
+    );
 
-FORM.addEventListener("submit", event => {
-    event.preventDefault();
-});
-
-function validateForm() {
-    let x = document.forms["quote-form"]["subject"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
+    showMessageBlock();
+};
+const addFormHandler = () => {
+    FORM.addEventListener("submit", event => {
+        event.preventDefault();
+        contentMessageBlock();
+    });
+};
