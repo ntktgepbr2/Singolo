@@ -16,6 +16,8 @@ let sliderContainer = document.getElementById("slider-container");
 let items = document.querySelectorAll(".item");
 let currentItem = 0;
 let isEnabled = true;
+const burger = document.getElementById("menu__toggle");
+const burgerNav = document.querySelector(".burger__nav");
 const screen = document.querySelector(".landscape__wallpaper");
 const screenTwo = document.querySelector(".portrait__wallpaper");
 
@@ -25,6 +27,10 @@ screen.onclick = function() {
 };
 screenTwo.onclick = function() {
     screenTwo.classList.toggle("hidden");
+};
+//BurgerMenu
+burger.onclick = function() {
+    burgerNav.classList.toggle("burger-active");
 };
 
 // Slider
@@ -42,7 +48,7 @@ function hideItem(direction) {
             this.classList.remove("active-slide", direction);
         }, { once: true }
     );
-    sliderContainer.classList.toggle("container-blue");
+    sliderContainer.classList.toggle("wrapper-blue");
 }
 
 function showItem(direction) {

@@ -12,92 +12,86 @@
 <body>
     <div class="container" id="container">
         <header class="sticky">
-            <div class="container">
-                <div class="header">
-                    <div class="header__logo">
-                        <h1>SINGOLO</h1>
-                        <p>*</p>
-                    </div>
-                    <nav class="header__menu" id="header__menu">
-                        <ul id="menu">
-                            <li><a href="#home" class="active">HOME </a></li>
-                            <li><a href="#services">SERVICES</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
-                        </ul>
-                    </nav>
+            <div class="wrapper header-style-3">
+                <div class="burger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label for="menu__toggle" class="menu__btn">
+              <span></span>
+            </label>
                 </div>
+                <div class="header__logo">
+                    <h1>SINGOLO<span>*</span></h1>
+                </div>
+                <nav class="burger__nav" id="header__menu">
+                    <ul class="header__menu" id="menu">
+                        <li class="menu__list">
+                            <a href="#home" class="active">HOME </a>
+                        </li>
+                        <li class="menu__list"><a href="#services">SERVICES</a></li>
+                        <li class="menu__list"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="menu__list"><a href="#about">ABOUT</a></li>
+                        <li class="menu__list"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
         <div class="bottom-line bottom-line_color1"></div>
 
         <section class="slider" id="home">
-            <div class="container" id="slider-container">
+            <div class="wrapper" id="slider-container">
+                <div class="arrow-left">
+                    <button type="button" class="btn-arrow"></button>
+                </div>
                 <div class="both-iphones">
                     <div class="item active-slide position">
                         <div class="both-iphones__portrait ">
-                            <figure class="portrait__frame">
-                                <img src="assets/CutPhone.png" width="215" alt="phone1 pic" />
-                            </figure>
-                            <figure class="portrait__shadow">
-                                <img src="assets/Verticalshadow.png" alt="shadow1 pic" />
-                            </figure>
-                            <figure class="portrait__wallpaper">
-                                <img src="assets/wallpaper-vertical.png" alt="wallpaper1 pic" />
-                            </figure>
+                            <img class="portrait__frame" src="assets/CutPhone.png" width="215" alt="phone1 pic" />
+
+                            <img class="portrait__shadow" src="assets/Verticalshadow.png" alt="shadow1 pic" />
+
+                            <img class="portrait__wallpaper" src="assets/wallpaper-vertical.png" alt="wallpaper1 pic" />
                         </div>
                         <div class="both-iphones__landscape">
-                            <figure class="landscape__frame">
-                                <img src="assets/CutPhone.png" width="215" alt="phone2 pic" />
-                            </figure>
-                            <figure class="landscape__shadow">
-                                <img src="assets/Shadowhorizont.png" alt="shadow2 pic" />
-                            </figure>
-                            <figure class="landscape__wallpaper">
-                                <img src="assets/wallpaper-hotizontal.png" alt="wallpaper2 pic" />
-                            </figure>
+                            <img class="landscape__frame" src="assets/CutPhoneHorizon.png" width="458" alt="phone2 pic" />
+
+                            <img class="landscape__shadow" src="assets/Shadowhorizont.png" alt="shadow2 pic" />
+
+                            <img class="landscape__wallpaper" src="assets/wallpaper-hotizontal.png" alt="wallpaper2 pic" />
                         </div>
                     </div>
                     <div class="item both-iphones__trinity">
-                        <img src="assets/Slide-2.png" alt="slide-2" />
+                        <img class="trinity_image" src="assets/Slide-2.png" alt="slide-2" />
                     </div>
+                </div>
 
-                    <div class="arrow-left">
-                        <button type="button" class="btn-arrow"></button>
-                    </div>
-                    <div class="arrow-right">
-                        <button type="button" class="btn-arrow_upend"></button>
-                    </div>
+                <div class="arrow-right">
+                    <button type="button" class="btn-arrow_upend"></button>
                 </div>
             </div>
         </section>
 
         <section class="our-services" id="services">
-            <div class="container">
+            <div class="wrapper">
                 <div class="our-services__header">
                     <h1 class="header-style">Our Services</h1>
                     <p class="paragraph-style">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus vel massa eget commodo. Fusce consequat ex blandit ante eleifend tristique. Suspendisse auctor tristique odio, vel pulvinar ex faucibus id. Lorem ipsum. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus vel massa eget commodo. Fusce consequat ex blandit ante eleifend tristique. Suspendisse auctor tristique odio, vel pulvinar ex.
                     </p>
                 </div>
                 <div class="our-services__colums">
-                    <div class="colums__item1">
+                    <div class="colums__item">
                         <div class="item1__content content_position">
                             <h2 class="header-style-2">Custom Design</h2>
                             <p class="paragraph-style-2">
-                                Lorem ipsum , consectetur adipiscing elit. Donec feugiat quam.Perque sodium navitus. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing
-                                elit. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit.
+                                Lorem ipsum , consectetur adipiscing elit. Lorem ipsum consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit. Lorem ipsum , consectetur adipiscing elit.
                             </p>
                         </div>
                         <div class="item1__image image_position_top">
                             <img src="assets/pen.png" alt="pen pic" width="60" />
                         </div>
                     </div>
-                    <div class="colums__item2">
+                    <div class="colums__item">
                         <div class="item2__content content_position">
                             <h2 class="header-style-2">Inovative Ideas</h2>
                             <p class="paragraph-style-2">
@@ -108,7 +102,7 @@
                             <img src="assets/bulb.png" alt="lamp pic" />
                         </div>
                     </div>
-                    <div class="colums__item3">
+                    <div class="colums__item">
                         <div class="item3__content content_position">
                             <h2 class="header-style-2">Love is The Answer</h2>
                             <p class="paragraph-style-2">
@@ -119,7 +113,7 @@
                             <img src="assets/heart.png" alt="heart pic" />
                         </div>
                     </div>
-                    <div class="colums__item4">
+                    <div class="colums__item">
                         <div class="item4__content content_position_bottom">
                             <h2 class="header-style-2">Responsive Layout</h2>
                             <p class="paragraph-style-2">
@@ -130,7 +124,7 @@
                             <img src="assets/phone.png" alt="phone3 pic" />
                         </div>
                     </div>
-                    <div class="colums__item5">
+                    <div class="colums__item">
                         <div class="item5__content content_position_bottom">
                             <h2 class="header-style-2">24 / 7 Support</h2>
                             <p class="paragraph-style-2">
@@ -141,7 +135,7 @@
                             <img src="assets/bubble.png" alt="bubble pic" />
                         </div>
                     </div>
-                    <div class="colums__item6 ">
+                    <div class="colums__item ">
                         <div class="item6__content content_position_bottom">
                             <h2 class="header-style-2">Feel Like A Star</h2>
                             <p class="paragraph-style-2">
@@ -157,11 +151,11 @@
             <div class="bottom-line bottom-line_color3"></div>
         </section>
         <section class="portfolio" id="portfolio">
-            <div class="container ">
+            <div class="wrapper">
                 <div class="portfolio__header">
                     <h1 class="header-style">Portfolio</h1>
                     <p class="paragraph-style">
-                        Donec vel lobortis eros, non viverra ligula. Quisque et eleifend arcu.
+                        Donec vel lobortis eros, non viverra ligula. Quisque et eleifend arcu.ligula. Quisque et eleifend arc
                     </p>
                 </div>
                 <div class="cards-filter paragraph-style-2">
@@ -172,51 +166,37 @@
             <span class="cards__artwork"><a href="#">Artwork</a></span>
                 </div>
                 <div class="cards-collection" id="collection">
-                    <figure>
-                        <img src="assets/ship.png" alt="ship" />
-                    </figure>
-                    <figure>
-                        <img src="assets/pupil.png" alt="pupil" />
-                    </figure>
-                    <figure>
-                        <img src="assets/moon.png" alt="moon" />
-                    </figure>
-                    <figure>
-                        <img src="assets/robot.png" alt="robot" />
-                    </figure>
-                    <figure>
-                        <img src="assets/rabbit.png" alt="rabbit" />
-                    </figure>
-                    <figure>
-                        <img src="assets/sdk.png" alt="sdk" />
-                    </figure>
-                    <figure>
-                        <img src="assets/android.png" alt="android" />
-                    </figure>
-                    <figure>
-                        <img src="assets/chikenegg.png" alt="chickenegg" />
-                    </figure>
-                    <figure>
-                        <img src="assets/green-monster.png" alt="green-monster" />
-                    </figure>
-                    <figure>
-                        <img src="assets/player.png" alt="player" />
-                    </figure>
-                    <figure>
-                        <img src="assets/monster.png" alt="monster" />
-                    </figure>
-                    <figure>
-                        <img src="assets/letter.png" alt="letter" />
-                    </figure>
-                    <figure>
-                        <img src="assets/android.png" alt="android" />
-                    </figure>
+                    <img src="assets/ship.png" alt="ship" />
+
+                    <img src="assets/pupil.png" alt="pupil" />
+
+                    <img src="assets/moon.png" alt="moon" />
+
+                    <img src="assets/robot.png" alt="robot" />
+
+                    <img src="assets/rabbit.png" alt="rabbit" />
+
+                    <img src="assets/sdk.png" alt="sdk" />
+
+                    <img src="assets/android.png" alt="android" />
+
+                    <img src="assets/chikenegg.png" alt="chickenegg" />
+
+                    <img src="assets/green-monster.png" alt="green-monster" />
+
+                    <img src="assets/player.png" alt="player" />
+
+                    <img src="assets/monster.png" alt="monster" />
+
+                    <img src="assets/letter.png" alt="letter" />
+
+                    <img src="assets/android.png" alt="android" />
                 </div>
             </div>
             <div class="bottom-line bottom-line_color1"></div>
         </section>
         <section class="about-us" id="about">
-            <div class="container ">
+            <div class="wrapper">
                 <div class="about-us__header">
                     <h1 class="header-style">About Us</h1>
                     <p>
@@ -232,7 +212,14 @@
                         <p class="paragraph-style-2">
                             Nulla facilisi. Mauris dolor est, molestie id lacinia eget, elementum semper ipsum. In quis dolor ante.
                         </p>
+                        <div class="person__links link_adam">
+                            <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
+                            <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
+                            <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
+                            <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
+                        </div>
                     </div>
+
                     <div class="person__desmond">
                         <img src="assets/desmond.png" alt="desmond" />
                         <h3 class="header-style-2">
@@ -241,7 +228,14 @@
                         <p class="paragraph-style-2">
                             Nulla faucibus leo ut magna vulputate . Curabitur ligula euismod, cursus lectus non, rhoncus odio.
                         </p>
+                        <div class="person__links link_desmond">
+                            <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
+                            <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
+                            <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
+                            <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
+                        </div>
                     </div>
+
                     <div class="person__scolara">
                         <img src="assets/scolara.png" alt="scolara" />
                         <h3 class="header-style-2">
@@ -250,35 +244,23 @@
                         <p class="paragraph-style-2">
                             Integer non rhoncus ex. Quisque convallis metus sit amet pellentesque fringilla. Donec suscipit arcu et viverra.
                         </p>
-                    </div>
-                    <div class="person__links link_adam">
-                        <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
-                        <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
-                        <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
-                        <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
-                    </div>
-                    <div class="person__links link_desmond">
-                        <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
-                        <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
-                        <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
-                        <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
-                    </div>
-                    <div class="person__links link_scolara">
-                        <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
-                        <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
-                        <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
-                        <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
+                        <div class="person__links link_scolara">
+                            <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
+                            <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
+                            <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
+                            <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="bottom-line bottom-line_color3"></div>
         </section>
         <section class="get-a-quote" id="contact">
-            <div class="container">
+            <div class="wrapper">
                 <div class="get-a-quote__header">
                     <h1 class="header-style">Get a Quote</h1>
                     <p class="paragraph-style">
-                        Donec ac sapien risus. Pellentesque commodo arcu ut posuere lacinia. Praesent auctor, purus volutpat porttitor malesuada, justo mauris lacinia urna, ac feugiat neque mauris eu elit. Vestibulum vel suscipit mauris.
+                        Donec ac sapien risus. Pellentesque commodo arcu sellentesque commodo arcu ut posuere lacinia. Praesent auctor, purus volutpat,dawes sase justo mauris lacinia urna, ac feugiat neque mauris eu elit. Vestibulum vel suscipit mauris.
                     </p>
                 </div>
                 <div class="get-a-quote__form">
@@ -338,15 +320,17 @@
     <div class="bottom-line bottom-line_color2"></div>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__links">
-                <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
-                <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
-                <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
-                <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
-            </div>
-            <div class="copyrights">
-                <p class="paragraph-style-2">© Copyright 2013</p>
+        <div class="wrapper">
+            <div class="footer-flex">
+                <div class="copyrights">
+                    <p class="paragraph-style-2">© Copyright 2013</p>
+                </div>
+                <div class="footer__links">
+                    <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="facebook" /></a>
+                    <a href="https://www.google.com/"><img src="assets/google+.svg" alt="google+" /></a>
+                    <a href="https://www.twitter.com/"><img src="assets/twitter.svg" alt="twitter" /></a>
+                    <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="linkedin" /></a>
+                </div>
             </div>
         </div>
     </footer>
